@@ -36,7 +36,6 @@ public class BasicArrayUtils {
      * @return the second to last element in the array
      */
     public static String getSecondToLastElement(String[] stringArray) {
-        return
-                stringArray[stringArray.length -2];
+        return stringArray[stringArray.length -2];
     }
 }
