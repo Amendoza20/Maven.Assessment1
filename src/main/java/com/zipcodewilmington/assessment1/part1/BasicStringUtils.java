@@ -10,7 +10,6 @@ public class BasicStringUtils {
      */
     public static String camelCase(String str) {
         String result = "";
-        str.substring(0,1).toUpperCase();
         result = str.substring(0, 1).toUpperCase() + str.substring(1);
 
         return result ;
@@ -34,16 +33,9 @@ public class BasicStringUtils {
      * @return string with identical contents, in reverse order, with first character capitalized
      */
     public static String reverseThenCamelCase(String str) {
-        String result= "";
-        StringBuilder reverse = new StringBuilder();
-        reverse.append(str);
-        reverse.reverse();
-        str.substring(0,1).toUpperCase();
-        result = str.substring(0, 1).toUpperCase() + str.substring(1);
-        result = reverse.toString();
-
-
-        return result;
+      String word = reverse(str);
+      word = camelCase(word);
+      return word;
     }
 
 
