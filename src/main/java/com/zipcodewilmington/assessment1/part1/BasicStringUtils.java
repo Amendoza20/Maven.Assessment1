@@ -52,6 +52,8 @@ public class BasicStringUtils {
      * @return string with identical characters, each with opposite casing
      */
     public static String invertCasing(String str) {
+
+
         return null;
     }
 }
